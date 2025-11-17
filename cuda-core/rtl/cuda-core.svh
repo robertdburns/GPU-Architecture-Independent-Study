@@ -1,13 +1,18 @@
 package cudacore;
 
-	typedef enum logic [2:0] {
-		ADD = 3'b000;
-		SUB = 3'b001;
-		SHFTL = 3'b010;
-		SHFTR = 3'b011;
-		AND = 3'b100;
-		OR = 3'b101;
-		XOR = 3'b110;
+	typedef enum logic [3:0] {
+		ADD = 4'b0000;
+		SUB = 4'b0001;
+
+		MUL = 4'b0010;
+		MAD = 4'b0011;
+
+		SHFTL = 4'b0100;
+		SHFTR = 4'b0101;
+
+		AND = 4'b0110;
+		OR = 4'b0111;
+		XOR = 4'b1000;
 	} opcode;
 
 endpackage
